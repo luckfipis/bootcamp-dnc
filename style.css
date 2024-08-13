@@ -152,3 +152,201 @@ input[type="submit"]{
     box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
     cursor: pointer;
 }
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: var(--azul-dnc);
+
+}
+
+.line1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+
+}
+
+footer h5{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    background-color: var(--preto-dnc);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 13px;
+}
+
+footer ul li{
+    text-align: center;
+    color: white;
+    margin: 20px 0px;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color: var(--cinza-hover);
+}
+
+footer .endereço{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-align: center;
+    width: 23%;
+
+}
+
+.line2{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin:0px;
+    padding: 10px;
+}
+
+.line2 a{
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.line2 a:first-child{
+    border-right: 3px solid white;
+}
+
+.line2 a:hover{
+    color: var(--cinza-hover);
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: -webkit-linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030; /* Para Safari e iOS */
+        background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+        background-repeat: no-repeat;
+    }
+    /* Menu de navegação Principal */
+#main {
+    display: flex;
+    width: 100%;
+    height: auto; /* Ajustar a altura para permitir crescimento em colunas */
+    border: 1px solid black;
+    background-color: var(--preto-dnc);
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    border-bottom: 1px solid #bababa;
+    flex-direction: column; /* Torna o menu uma coluna */
+    padding: 10px 0; /* Adiciona espaçamento ao redor */
+}
+
+#menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column; /* Ajusta o layout dos itens do menu para colunas */
+    justify-content: flex-start; /* Alinha os itens ao topo */
+    align-items: center; /* Centraliza os itens no eixo horizontal */
+}
+
+#menu a {
+    margin: 10px 0; /* Adiciona margem entre os links para espaçamento vertical */
+}
+
+#main button {
+    margin: 20px auto 0; /* Centraliza o botão e adiciona espaçamento superior */
+    background-color: var(--azul-dnc);
+    border: 0px;
+    height: 40px;
+    width: 80px;
+    font-family: var(--fonte-padrao);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+}
+
+
+    header h1 {
+        font-size: 50px;
+        line-height: 1.2;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    form {
+        width: 90%; /* Reduz a largura do formulário em telas menores */
+        font-size: 24px; /* Reduz o tamanho da fonte do formulário */
+    }
+
+    .checkboxitens label {
+        font-size: 20px; /* Reduz o tamanho da fonte dos labels dos checkboxes */
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1); /* Reduz ainda mais o tamanho dos checkboxes para iPhones */
+    }
+
+    input[type="submit"] {
+        font-size: 28px; /* Ajusta o tamanho da fonte do botão de submit */
+        height: 50px; /* Ajusta a altura do botão de submit */
+    }
+
+    footer .endereço {
+        width: 100%;
+        font-size: 16px;
+    }
+    #main button {
+        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+        transition: box-shadow 0.3s ease-in-out; /* Adiciona transição suave */
+    }
+    
+    #main button:hover {
+        box-shadow: 5px 4px 6px rgba(12, 112, 242, 0.4);
+    }
+    
+    footer {
+        padding: 15px 10px; /* Reduzido o padding geral no footer */
+    }
+
+    footer ul li, footer h5, .line2 a {
+        font-size: 14px; /* Reduzido ainda mais o tamanho da fonte */
+    }
+
+    footer .endereço {
+        font-size: 14px; /* Reduzido o tamanho da fonte do endereço */
+    }
+}
+
+
+    
+   
